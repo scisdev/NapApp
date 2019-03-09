@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private long t = 0;
     private long add = 0;
 
-    public Runnable update = new Runnable() {
+    private Runnable update = new Runnable() {
         @Override
         public void run() {
             t = add + System.nanoTime() - timestamp;
