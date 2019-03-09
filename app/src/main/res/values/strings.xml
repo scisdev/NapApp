@@ -7,7 +7,6 @@
     <string name="Stop">STOP</string>
     <string name="About">License</string>
     <string name="License">I do not own the font used
-        in this application. The author of this font is Sizenko Alexander at
-        \nhttp://www.styleseven.com\nThe font is used under the terms of freeware usage agreement
-        as stated in the official readme file coming with the font.</string>
+        in this application. The author of this font is Sizenko Alexander. His works may be found at
+        \nhttp://www.styleseven.com</string>
 </resources>
