@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NapApp</string>
+    <string name="default_upper_text">00:00</string>
+    <string name="default_lower_text">000000</string>
+    <string name="Pause">PAUSE</string>
+    <string name="Start">START</string>
+    <string name="Stop">STOP</string>
+    <string name="About">License</string>
+    <string name="License">I do not own the font used
+        in this application. The author of this font is Sizenko Alexander at
+        \nhttp://www.styleseven.com\nThe font is used under the terms of freeware usage agreement
+        as stated in the official readme file coming with the font.</string>
+</resources>

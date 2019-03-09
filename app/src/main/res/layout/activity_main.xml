@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/default_upper_text"
+            android:fontFamily="@font/digit_font"
+            android:textColor="@color/colorText"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/micro"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            android:text="@string/default_lower_text"
+            android:textSize="30sp"
+            android:textColor="@color/colorText"
+            android:fontFamily="@font/digit_font"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/pauseButton"
+                android:onClick="toggle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ripple_effect"
+                android:text="@string/Start"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/stopButton"
+                android:onClick="stop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ripple_effect"
+                android:text="@string/Stop"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
