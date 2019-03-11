@@ -58,9 +58,6 @@ public class MainActivity extends AppCompatActivity {
             running = toggleRunning(false);
             timestamp = System.nanoTime();
             h.post(update);
-            left.setText(R.string.Pause);
-            right.setTextColor(getResources().getColor(R.color.colorText));
-            right.setClickable(true);
         } else {
             running = toggleRunning(true);
             add = t;
