@@ -70,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
     public void stop(View v) {
         if (running) {
             running = toggleRunning(true);
-            t = 0;
             add = 0;
             time.setText(R.string.default_upper_text);
             micro.setText(R.string.default_lower_text);
@@ -87,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void betterStop(View v){
         running = toggleRunning(running);
-        t = 0;
         add = 0;
         time.setText(R.string.default_upper_text);
         micro.setText(R.string.default_lower_text);
