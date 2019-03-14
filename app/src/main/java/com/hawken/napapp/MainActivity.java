@@ -65,39 +65,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void stop(View v) {
-        if (running) {
-            running = toggleRunning(true);
+        if (!running) {
+            right.setTextColor(getResources().getColor(R.color.colorAccent));
+            right.setClickable(false);
             add = 0;
             time.setText(R.string.default_upper_text);
             micro.setText(R.string.default_lower_text);
         }
     }
 
-    /* Зачем условие, которое ограничивает нажатие кнопки СТОП только временем работы таймера?
-    * Ведь обычно, мы отмерили какое-то время, и если нам больше этот отрезок не нужен - мы сбросили таймер.
-    * Этот сброс делается во время паузы, когда результат можно увидеть в записанном виде.
-    * Метод, приведённый ниже, можно использовать для нормальной работы кнопки СТОП, которая, однако, противоречит заданию.
-    * Этот метод всего-лишь отличается отсутствием проверки условия того, что таймер работает.
-    * Для улучшения приложения в activity_main.xml следует поменять параметр android:onClick у правой кнопки на название этого метода.
-    */
-
-    public void betterStop(View v){
-        running = toggleRunning(running);
-        add = 0;
-        time.setText(R.string.default_upper_text);
-        micro.setText(R.string.default_lower_text);
-    }
-
     public boolean toggleRunning(boolean running) {
         if (running) {
             left.setText(R.string.Start);
-            right.setTextColor(getResources().getColor(R.color.colorAccent));
-            right.setClickable(false);
+            right.setTextColor(getResources().getColor(R.color.colorText));
+            right.setClickable(true);
             return false;
         } else {
             left.setText(R.string.Pause);
-            right.setTextColor(getResources().getColor(R.color.colorText));
-            right.setClickable(true);
+            right.setTextColor(getResources().getColor(R.color.colorAccent));
+            right.setClickable(false);
             return true;
         }
     }
