@@ -14,7 +14,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static boolean running;
+    private boolean running;
     private TextView time;
     private TextView micro;
     private Button left;
